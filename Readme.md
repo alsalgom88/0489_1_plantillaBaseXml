@@ -130,5 +130,3 @@ Proyecto diseñado como **plantilla base** para:
 
 Proyecto de uso educativo.
 Libre para modificar y reutilizar con fines formativos.
-
-```
