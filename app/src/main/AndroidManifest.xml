@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Fitxer de manifest: defineix quines activitats hi ha a l'app i quina és la principal -->
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.plantillabasexml">
+
+    <application
+        android:allowBackup="true"
+        android:label="plantillaxml"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar">
+
+        <!-- Activitat principal que s'executa en obrir l'app -->
+        <activity
+            android:name="com.example.plantillabasexml.MainConstraintActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />   <!-- Punt d'entrada -->
+                <category android:name="android.intent.category.LAUNCHER" /> <!-- Mostra la icona -->
+            </intent-filter>
+        </activity>
+
+        <!-- Altres activitats disponibles, però no principals -->
+        <activity android:name="com.example.plantillabasexml.MainLinearActivity" />
+        <activity android:name="com.example.plantillabasexml.MainLegacyActivity" />
+    </application>
+</manifest>
